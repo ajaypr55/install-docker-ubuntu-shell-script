@@ -2,7 +2,7 @@ FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
 RUN apt-get -y update && apt-get install -y --no-install-recommends \
         git libgmp3-dev \
         libsndfile1
-RUN git clone --depth=1 https://github.com/uber/ludwig.git \
+RUN git clone --depth=1 https://github.com/ajaypr55/ludwig.git
     && cd ludwig/ \
     && pip install -r requirements.txt \
     && python -m spacy download en \
